@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 40px;
+}
+
+.gpa-calculator {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2b2b2b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#addRow {
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#calculateBtn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#calculateBtn:hover {
+    background-color: #218838;
+}
+
+#resetBtn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#resetBtn:hover {
+    background-color: #c82333;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: center;
+    color: #333;
+}
+
+#gpa {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.removeRow {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+    }
+
+    input, select {
+        padding: 6px;
+    }
+
+    #calculateBtn, #resetBtn {
+        width: 100%;
+        margin-bottom: 10px; 
+    }
+
+    #addRow {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px; 
+    }
+
+    .gpa-calculator {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px; 
+    }
+
+    input, select {
+        padding: 5px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
